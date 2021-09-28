@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="source.js"></script>
+
+    <title>Star Wars | Site do seu filme favorito</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo-navbar">
+        <button class="logo" onclick="foo(event)"></button>
+      </div>
+      <div class="title">
+        <h2><a href="index.html">Inicio</a></h2>
+      </div>
+      <div>
+        <h2><a href="contact.html">Contato</a></h2>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Pesquisar no blog" />
+        <button type="submit">Pesquisar</button>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="article1" id="article-1">
+          <p>
+            Em maio de 1977 chegava aos cinemas dos EUA Star Wars, primeiro
+            filme de uma franquia bilionária nos cinemas que rendeu ao seu
+            criador, George Lucas, enorme prestígio e um império em produtos
+            licenciados. Desde o início, mais que uma visão criativa de um
+            universo conciso e povoado por estranhos e fascinantes seres, o
+            cineasta prezou por uma abordagem diferente da comercialização do
+            filme - conseguindo ficar com os direitos sobre merchandising de sua
+            obra, o que o tornou um dos homens mais poderosos da indústria do
+            entretenimento -, decretando a morte da Velha Hollywood e seu
+            formato vigente de negócios.
+          </p>
+        </div>
+
+        <div class="article2" id="article-2">
+          <p>
+            George Lucas frequentou a University of Southern California, onde
+            ficou amigo de outro sonhador, Francis Ford Coppola, e começou a
+            ganhar pequenos prêmios com seus curtas. Depois, aceitou um estágio
+            na Warner Brothers e convenceu a empresa, auxiliado por Coppola, a
+            assinar um contrato para que o estagiário transformasse seu curta
+            THX em um longa-metragem. Mas a Warner odiou o resultado, exigindo
+            que o dinheiro investido fosse devolvido e retalhando o filme para
+            lançamento nos cinemas. Seu próximo projeto, também bastante cortado
+            foi Loucura de Verão (American Graffiti), comédia ambientada na
+            década de 1950. Sucesso de público, o longa deu certo fôlego para
+            que o cineasta tirasse do papel seu mais ambicioso projeto, uma
+            ópera espacial inspirada nos seriados cinematográficos de Flash
+            Gordon e Buck Rogers, Star Wars.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <button  class="open-modal tooltip" onclick="abrirModal()">Chat<span class="tooltiptext">Clique aqui para abrir o Chat</span></button>
+      <div class="bg-modal" id="modal">
+        <div class="modal">
+            <span class="close"onclick="fecharModal()">&times;</span>
+            <div class="container-modal">
+            <h3>Por Favor efetue o login</h3>
+            <label>login:</label>
+            <input type="text" autofocus required autocomplete="login"/><br />
+            <label>Password:</label>
+            <input type="text"  required autocomplete="password" /><br />
+            <button>login</button>
+          </div>
+           </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

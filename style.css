@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+p {
+  padding: 20px;
+}
+
+header {
+  background-image: linear-gradient(to right, #9e1a25, #3f0a0e, black);
+  box-shadow: 10px 5px 5px black;
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  width: 100%;
+  border: 1px solid;
+}
+section {
+  margin-top: 100px;
+}
+.logo {
+  background-image: url(./assets/pngwing.com.png);
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  cursor: grabbing;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+  padding: 20px;
+  margin: 10px;
+}
+.article1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  border: 4px solid;
+  height: 700px;
+  width: 33, 3%;
+  max-width: 0;
+  background-color: #3a3737;
+  box-shadow: 7px 5px 5px #2e3537;
+  border-radius: 15px;
+  overflow: auto;
+  transition: max-width 2s;
+}
+.article2 {
+  display: grid;
+  grid-template-columns: 3fr;
+  margin: 10px;
+  border: 4px solid;
+  height: 700px;
+  width: 66, 6%;
+  max-width: 100%;
+  background-color: #414a4c;
+  box-shadow: 7px 5px 5px #414a4c;
+  border-radius: 15px;
+  overflow: auto;
+}
+button {
+  background-color: #051b49;
+  border: 2px solid;
+  border-radius: 25px;
+  color: rgb(232, 6, 6);
+  margin-left: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover {
+  background-color: yellow;
+  transition: all 0.6s ease-out 0s;
+}
+footer {
+  background-image: linear-gradient(to right, black, #3f0a0e, #9e1a25);
+  box-shadow: 2px 2px 20px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  top: -100%;
+  display: blocked;
+  transition: 350ms;
+}
+.modal {
+  width: 60%;
+  height: 400px;
+  background: #f9f9f9;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 100px auto 0 auto;
+}
+.modal span {
+  float: right;
+  font-size: 55px;
+  color: #000;
+  margin: 8px 15px;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.modal span:hover {
+  color: #990000;
+  transition: 350ms;
+}
+.container-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.container-modal input {
+  padding: 7px;
+}
+
+/* --------------------------------------- Tooltip container------------------------------------------------ */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: -170%;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ------------------------MEDIA---------------------------------- */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  input {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+}

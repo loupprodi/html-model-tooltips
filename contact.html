@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>contato-page</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="./assets/pngwing.com.png"
+          height="50px"
+          width="50px"
+          alt="ordem jedi"
+        />
+      </div>
+      <div class="title">
+        <h2><a href="index.html">Inicio</a></h2>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Pesquisar no blog" />
+        <button type="submit">Pesquisar</button>
+      </div>
+    </header>
+    <section>
+      <form>
+        <div class="form-container">
+          <div class="row-container">
+            <label>Nome Completo:</label>
+            <input type="text" class="Name" name="Nome" autofocus required autocomplete="name"/><br />
+            <label>Aniversario:</label>
+            <input type="date" class="Birthday" name="Aniversario" required autocomplete="date" /><br />
+            <label>Email:</label>
+            <input type="email" class="Email" name="Email" required autocomplete="email"/><br />
+            <span>Escolha seu lado da força:</span>
+            <select class="select" name="select" id="select">
+               <option value="default">Não sei ainda</option>
+                <option value="bogan">lado sombrio da força</option>
+                <option value="ashla">lado luminoso da força</option>
+            </select><br /><br />
+            <label>Newsletter:</label>
+            <textarea
+              name="newsletter"
+              id="texto"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <input type="submit" value="Enviar" target="_blank" />
+          </div>
+        </div>
+      </form>
+    </section>
+      <div class="footer">
+      <div> <ul>
+        <a href="https://www.instagram.com/starwars/?hl=pt-br">
+          <li class="instagram">/Starwars</li>
+        </a>
+        <a href="https://twitter.com/starwars">
+          <li class="twitter">/Starwars</li>
+        </a>
+        <a href="https://www.youtube.com/c/BesY24/videos">
+          <li class="youtube">/Starwars</li>
+        </ul></div>
+      </div>
+      </section>
+  </body>
+</html>
